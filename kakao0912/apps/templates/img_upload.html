@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href = "static/css/bootstrap-3.2.0-dist/css/bootstrap.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+    <script type = "text/javascript" src = "static/css/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/home.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="static/css/upload_style.css" media="screen" />
+    
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--Pattern HTML-->
+  <div id="pattern" class="pattern">
+    <!--Begin Pattern HTML-->
+        <a href="#menu" class="menu-link">Menu</a>
+        <nav id="menu" role="navigation">
+            <ul>
+                 <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="#">이용방법</a></li>
+                <li><a href="{{url_for('img_upload')}}">신청하기</a></li>
+                <li><a href="#">Q / A</a></li>
+           
+                <li><a href="#">login</a></li>
+                <li><a href="{{url_for('join')}}">join</a></li>
+          
+            </ul>
+        </nav>
+    </div>
+    <!--End Pattern HTML-->
+    
+
+    <div class="container"> 
+        <div class="logo">
+            <br/><h1> 프사 없음 </h1>
+            <p> 프로필로 광고하고! 돈도 벌고! </p>
+            <br/>
+        </div>
+        <div class="menu-2">
+            <!-- 검은 라인 -->
+            <br/>
+        </div>
+        <div class="contents">
+
+            <form action="{{url_for('img_upload')}}" enctype="multipart/form-data" method="POST">
+              <input type="file" name="photo" multiple>
+              <p>oh 이미지를 골라주세용 oh</p>
+              <br/>              
+              <button type="submit"> 다음 단계로! </button>
+            </form>
+
+        </div>
+        <footer role="contentinfo">   
+
+        </footer>
+    </div>
+
+</body>
+</html>
