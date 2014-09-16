@@ -2,7 +2,6 @@
 models.py
 """
 from flask import Flask
-r
 from apps import app, pdb
 from google.appengine.ext import db 
 
@@ -24,4 +23,4 @@ class Advert(pdb.Model):
 
 class Photo(pdb.Model):
 	__tablename__ = 'Photo'
-	photo = db.BlobProperty(primary_key=True)
+	photo = db.BlobProperty()
