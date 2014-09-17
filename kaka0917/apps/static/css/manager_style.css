@@ -1,0 +1,65 @@
+
+.JayZ {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: white;
+  margin:2em auto;
+  padding: 2em;
+  width:900px;
+}
+
+ul {
+  -webkit-column-count: 3;
+  -webkit-column-gap: 1.75em;
+  -moz-column-count: 3;
+  -moz-column-gap: 1.75em;
+  column-count: 3;
+  column-gap: 1.75em;
+  list-style:none;
+  
+  li {
+    margin-bottom: 2.5em;
+    width: 250px;
+    
+    a {
+      text-decoration:none;
+      color: #444;
+      
+      &:hover {
+        
+        img {opacity:0.9;}
+        p {background:#ddd;}
+        
+      }
+      
+    }
+    
+    img {
+      -webkit-border-radius: 4px 4px 0 0;
+      -moz-border-radius: 4px 4px 0 0;
+      border-radius: 4px 4px 0 0;
+      margin:0;
+    }
+    
+    p {
+      -webkit-border-radius: 0 0 4px 4px;
+      -moz-border-radius: 0 0 4px 4px;
+      border-radius: 0 0 4px 4px;
+      position: relative;
+      text-align:center;
+      background: #ccc;
+      padding: .75em;
+      display:block;
+      top:-5px;
+      margin:0;
+    }
+    
+    &:nth-child(4n+1) p {border-top:3px solid #5ab91b;}
+    &:nth-child(4n+2) p {border-top:3px solid #d54343;}
+    &:nth-child(4n+3) p {border-top:3px solid #1ab8da;}
+    &:nth-child(4n+4) p {border-top:3px solid #dfd42b;}
+    
+  }
+   
+}
